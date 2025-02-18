@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #0E0D0D;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.container .logo{
+    font-size: 32px;
+}
+
+header {
+    display: flex;
+    padding: 25px 0px 0px 0px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    border: 0px;
+    margin-left: 100px;
+}
+
+header nav ul li {
+    margin: 0 35px;
+    border: 0px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #005A9C;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 12px;
+    padding: 4px;
+    width: 340px;
+}
+
+.search input {
+    background-color: #333;
+    border: none;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+}
+
+.login {
+    display: flex;
+    gap: 10px;
+    margin-left: 120px;
+}
+
+.login a{
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.login a:hover {
+    color: #005A9C;
+}
+
+.upper{
+    margin-left: 10%;
+    margin-right: 10.6%;
+    margin-bottom: 75px;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 685px;
+    margin-bottom: 60px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-buttons {
+    position: absolute;
+    bottom: 50px;
+    left: 300px;
+    display: flex;
+    gap: 40px;
+}
+
+.hero-button {
+    font-family: 'Jost', sans-serif;
+    padding: 15px 20px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #303D3C;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ;
+}
+
+.hero-button:hover {
+    background-color: #005A9C;
+    transform: scale(1.05);
+}
+
+main h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main div div {
+    gap: 35px;  
+}
+
+main div h2 + div {
+    display: flex;
+    align-items: center;
+}
+
+main div img {
+    margin-bottom: 90px;
+    transition: transform 0.3s, box-shadow 0.3s ;
+    border-radius: 8px;
+}
+
+main div img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.lower {
+    margin-left: 10%;
+    margin-right: 11%;
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 0px;
+    text-align: left;
+}
+
+.footer .columns {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer h4 {
+    font-size: 24px;
+}
+
+.footer ul li {
+    margin-bottom: 23px;
+    font-size: 20px;  
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #005A9C;
+}
+
+.footer .columns div {
+    margin-left: 210px;
+}
+
+.footer .columns div img {
+    margin-right: 10px;
+    margin-top: 30px;
+    transition: transform 0.3s;
+}
+
+.footer .columns div img:hover {
+    transform: scale(1.2);
+}
+
+.footer .columns {
+    align-items: flex-start;
+}
+
+.footer .footer_2 ul li {
+    margin-left: 210px;
+    margin-bottom: 2px;
+    color: #616161;
+}

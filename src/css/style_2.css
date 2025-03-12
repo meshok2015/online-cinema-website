@@ -85,74 +85,111 @@ header nav ul li a:hover {
     color: #005A9C;
 }
 
-.upper{
+.upper {
     margin-left: 10%;
     margin-right: 10.6%;
-    margin-bottom: 75px;
+    margin-bottom: 35px;
     margin-top: 15px;
 }
 
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 685px;
-    margin-bottom: 60px;
+.movie-details {
+    padding: 40px 0;
 }
 
-.hero-image {
-    width: 100%;
-    height: 100%;
+.movie-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+    margin-bottom: 64px;
 }
 
-.hero-buttons {
-    position: absolute;
-    bottom: 50px;
-    left: 300px;
+.movie-poster img {
+    width: 100%;
+    object-fit:contain;
+    border-radius: 12px;
+}
+
+.movie-content h1 {
+    font-size: 36px;
+    margin: 0 0 24px 0;
+}
+
+.movie-meta {
     display: flex;
-    gap: 40px;
+    gap: 24px;
+    margin-bottom: 24px;
 }
 
-.hero-button {
+.movie-meta > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.movie-meta img {
+    width: 20px;
+    height: 20px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 32px;
+}
+
+.movie-details-section {
+    margin-bottom: 24px;
+}
+
+.movie-details-section h3 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+
+.movie-details-section p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.watch-button {
+    margin-top: 50px;
     font-family: 'Jost', sans-serif;
-    padding: 15px 20px;
-    font-size: 24px;
+    padding: 12px 32px;
+    font-size: 20px;
     color: #fff;
     background-color: #303D3C;
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ;
+    display: grid;
 }
 
-.hero-button:hover {
-    background-color: #005A9C;
-    transform: scale(1.05);
+.watch-button:hover {
+    background-color: #004a7c;
 }
 
-main h2 {
+.recommended-movies h2 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
-main div div {
-    gap: 35px;  
-}
-
-main div h2 + div {
-    display: flex;
-    align-items: center;
-}
-
-main div img {
-    margin-bottom: 90px;
+.recommended-movies div img {
+    margin-bottom: 50px;
     transition: transform 0.3s, box-shadow 0.3s ;
     border-radius: 8px;
 }
 
-main div img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 35px;
+    align-items: center;
+}
 
+.movie-grid img:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
 }
 
 .lower {
@@ -202,7 +239,6 @@ main div img:hover {
 
 .footer .columns div img {
     margin-right: 10px;
-
     transition: transform 0.3s;
 }
 
@@ -219,3 +255,4 @@ main div img:hover {
     margin-bottom: 2px;
     color: #616161;
 }
+

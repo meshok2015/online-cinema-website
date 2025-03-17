@@ -73,6 +73,7 @@ header nav ul li a:hover {
     display: flex;
     gap: 10px;
     margin-left: 120px;
+    
 }
 
 .login a {
@@ -85,79 +86,37 @@ header nav ul li a:hover {
     color: #005A9C;
 }
 
-.upper{
+.upper {
     margin-left: 10%;
     margin-right: 10.6%;
-    margin-bottom: 75px;
+    margin-bottom: 65px;
     margin-top: 15px;
 }
 
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 685px;
-    margin-bottom: 60px;
+
+
+.content-box {
+    margin-bottom: 64px;
 }
 
-.hero-image {
-    width: 100%;
-    height: 100%;
+.content-box h1 {
+    font-size: 32px;
+    margin: 0 0 24px 0;
 }
 
-.hero-buttons {
-    position: absolute;
-    bottom: 50px;
-    left: 300px;
-    display: flex;
-    gap: 40px;
-}
-
-.hero-button {
-    font-family: 'Jost', sans-serif;
-    padding: 15px 20px;
+.content-description {
     font-size: 24px;
-    color: #fff;
-    background-color: #303D3C;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s ;
+    line-height: 2;
+    margin-bottom: 32px;
 }
 
-.hero-button:hover {
-    background-color: #005A9C;
-    transform: scale(1.05);
-}
-
-main h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-main div div {
-    gap: 35px;  
-}
-
-main div h2 + div {
-    display: flex;
-    align-items: center;
-}
-
-main div img {
-    margin-bottom: 90px;
-    transition: transform 0.3s, box-shadow 0.3s ;
-    border-radius: 8px;
-}
-
-main div img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-
+.content-description ul {
+    margin-left: 20px;
 }
 
 .lower {
     margin-left: 10%;
-    margin-right: 11%;
+    margin-right: 10.6%;
     margin-bottom: 50px;
 }
 
@@ -168,7 +127,6 @@ main div img:hover {
 
 .footer .columns {
     display: flex;
-    justify-content: flex-start;
 }
 
 .footer ul {
@@ -179,11 +137,10 @@ main div img:hover {
 .footer h4 {
     font-size: 24px;
     margin-bottom: 35px;
-    
 }
 
 .footer ul li {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     font-size: 20px;  
 }
 
@@ -203,7 +160,6 @@ main div img:hover {
 
 .footer .columns div img {
     margin-right: 10px;
-
     transition: transform 0.3s;
 }
 

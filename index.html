@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imprime</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/video.css">
 </head>
 <body>
     <header class="container">
-        <div class="logo">IMPRIME</div>
+        <div class="logo"><a href="index.html" >IMPRIME</a></div>
         <nav>
             <ul>
-                <li><a href="index.html"   id="main">Главная</a></li>
+                <li><a href="index.html"    id="main">Главная</a></li>
                 <li><a href="moe.html"      id="films">Моё</a></li>
                 <li><a href="films.html"    id="films">Фильмы</a></li>
                 <li><a href="serials.html"  id="series">Сериалы</a></li>
@@ -35,11 +36,23 @@
     <div class="hero-section">
         <img src="./src/img/venom.svg" alt="Venom" class="hero-image">
             <div class="hero-buttons">
-                <button class="hero-button">Смотреть фильм</button>
+                <button class="hero-button" id="watch-movie-btn">Смотреть фильм</button>
                 <a href="about_film.html"> <button class="hero-button">О фильме</button></a>
         </div>
     </div>
     
+
+
+    <div class="video-module" id="video-module">
+        <div class="video-container">
+            <button class="close-button" id="close-video-btn">X</button>
+            <video controls id="movie-video">
+                <source src="./src/video/ssstwitter.com_1712089705173.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+    </div>
+
     
     <main class="container">
         <div>
@@ -129,7 +142,8 @@
                 <li>2025 Imprime. Все права защищены.</li>
             </ul>
         </div>
-
     </footer>
+
+    <script src="./src/js/video.js"></script>
 </body>
 </html>

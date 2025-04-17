@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О фильме - Imprime</title>
     <link rel="stylesheet" href="./src/css/style_2.css">
+    <link rel="stylesheet" href="./src/css/video.css">
 </head>
 <body>
     <header class="container">
-        <div class="logo">IMPRIME</div>
+        <div class="logo"><a href="index.html" >IMPRIME</a></div>
         <nav>
             <ul>
                 <li><a href="index.html" id="main">Главная</a></li>
@@ -70,7 +71,17 @@
                     <p>Том Харди, Мишель Уильямс, Вуди Харрельсон</p>
                 </div>
 
-                <button class="watch-button" id="watchMovieBtn">Смотреть фильм</button>
+                <button class="watch-button" id="watch-movie-btn">Смотреть фильм</button>
+
+                <div class="video-module" id="video-module">
+                    <div class="video-container">
+                        <button class="close-button" id="close-video-btn">X</button>
+                        <video controls id="movie-video">
+                            <source src="./src/video/ssstwitter.com_1712089705173.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -134,5 +145,6 @@
         </div>
     </footer>
 
+    <script src="./src/js/video.js"></script>
 </body>
 </html>

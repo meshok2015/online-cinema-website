@@ -47,7 +47,18 @@ header nav ul li a {
     transition: color 0.3s;
 }
 
+
 header nav ul li a:hover {
+    color: #005A9C;
+}
+
+header div a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header div a:hover {
     color: #005A9C;
 }
 

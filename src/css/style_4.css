@@ -4,13 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-  }
+}
 
 body {
     font-family: 'Jost', sans-serif;
     background-color: #0E0D0D;
     color: #fff;
 }
+
+
 
 .container {
     width: 80%;
@@ -25,6 +27,7 @@ body {
 header {
     display: flex;
     padding: 25px 0px 0px 0px;
+    position: relative;
 }
 
 header nav ul {
@@ -46,7 +49,6 @@ header nav ul li a {
     font-size: 20px;
     transition: color 0.3s;
 }
-
 
 header nav ul li a:hover {
     color: #005A9C;
@@ -103,7 +105,7 @@ header div a:hover {
     color: #005A9C;
 }
 
-.upper{
+.upper {
     margin-left: 10%;
     margin-right: 10.6%;
     margin-bottom: 75px;
@@ -153,10 +155,8 @@ header div a:hover {
 }
 
 .plan-card:hover {
-transform: scale(1.05);
+    transform: scale(1.05);
 }
-
-
 
 .plan-name {
     font-size: 24px;
@@ -203,7 +203,6 @@ transform: scale(1.05);
     font-family: 'Jost', sans-serif;
 }
 
-
 .subscription-terms {
     max-width: 800px;
     margin: 0 auto;
@@ -216,14 +215,7 @@ transform: scale(1.05);
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
-} 
-
-main h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
 }
-
-
 
 .lower {
     margin-left: 10%;
@@ -249,7 +241,6 @@ main h2 {
 .footer h4 {
     font-size: 24px;
     margin-bottom: 35px;
-    
 }
 
 .footer ul li {
@@ -273,7 +264,6 @@ main h2 {
 
 .footer .columns div img {
     margin-right: 10px;
-
     transition: transform 0.3s;
 }
 
@@ -290,3 +280,90 @@ main h2 {
     margin-bottom: 2px;
     color: #616161;
 }
+
+@media(max-width: 768px) {
+
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .search {
+        width: 60%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .login {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .subscription-header h1 {
+        font-size: 28px;
+    }
+
+    .subscription-header p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .subscription-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .subscription-terms {
+        padding: 0 15px;
+    }
+
+    .upper, .lower {
+        margin: 0 5%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer .columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer .columns div {
+        margin-left: 0;
+    }
+
+    .footer .footer_2 ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer_2 ul li {
+        margin-left: 0;
+        font-size: 14px;
+    }
+}
+
+

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О фильме - Imprime</title>
     <link rel="stylesheet" href="./src/css/style_3.css">
+    <link rel="stylesheet" href="./src/css/auth-modal.css">
 </head>
 <body>
     <header class="container">
@@ -22,11 +23,40 @@
             <img src="./src/icons/search.svg" alt="Search">
             <input placeholder="Поиск">
         </div>
-        <div class="login">
+        <div class="login"  id="login-button">
             <img src="./src/icons/Login.png" alt="Login">
             <a href="#!">Войти</a>
         </div>
     </header>
+
+    <div class="auth-modal-overlay" id="auth-modal">
+        <div class="auth-modal">
+            <button class="auth-close-button" id="auth-close-button">✕</button>
+            <p class="auth-title">Авторизация</p>
+            <form class="auth-form">
+                <div class="auth-form-group">
+                    <label>Email или логин</label>
+                    <input placeholder="Введите email или логин">
+                </div>
+                <div class="auth-form-group">
+                    <label >Пароль</label>
+                    <input placeholder="Введите пароль">
+                </div>
+                <div class="auth-form-options">
+                    <div class="auth-remember">
+                        <input type="checkbox">
+                        <label for="remember">Запомнить меня</label>
+                    </div>
+                    <a href="#!" class="auth-forgot">Забыли пароль?</a>
+                </div>
+                <button type="submit" class="auth-submit-button">Войти</button>
+            </form>
+            <div class="auth-register">
+                <p>Еще нет аккаунта? <a href="#!">Зарегистрироваться</a></p>
+            </div>
+        </div>
+    </div>
+
 
     <hr class="upper">
 
@@ -101,5 +131,9 @@
             </ul>
         </div>
     </footer>
+
+    <script src="./src/js/video.js"></script>
+    <script src="./src/js/auth.js"></script>
+
 </body>
 </html>

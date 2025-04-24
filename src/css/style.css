@@ -1,4 +1,4 @@
-@import url('C:/Users/meshok/Desktop/online_cinema_website/src/css/fonts.css');
+@import url('./fonts.css');
 
 * {
     margin: 0;
@@ -235,3 +235,5 @@ main div img:hover {
     margin-bottom: 2px;
     color: #616161;
 }
+
+

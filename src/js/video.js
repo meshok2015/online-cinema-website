@@ -1,11 +1,14 @@
-const btn   = document.getElementById('watch-movie-btn');
-const module = document.getElementById('video-module');
-const close = document.getElementById('close-video-btn');
-const video = document.getElementById('movie-video');
-    
-btn.addEventListener('click', () => module.style.display = 'flex');
-    
-close.addEventListener('click', () => {
+var btn = document.getElementById('watch-movie-btn');
+var module = document.getElementById('video-module');
+var close = document.getElementById('close-video-btn');
+var video = document.getElementById('movie-video');
+
+
+btn.onclick = function() {
+    module.style.display = 'flex';
+};
+
+close.onclick = function() {
     module.style.display = 'none';
-     video.pause();
-});
+    video.pause();
+};

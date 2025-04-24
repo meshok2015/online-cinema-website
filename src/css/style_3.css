@@ -70,6 +70,11 @@ header div a:hover {
     width: 340px;
 }
 
+.search img {
+    max-width: 27px;
+    max-height: 35px;
+}
+
 .search input {
     background-color: #333;
     border: none;
@@ -81,9 +86,10 @@ header div a:hover {
 
 .login {
     display: flex;
+    align-items: center;
     gap: 10px;
     margin-left: 120px;
-    
+    font-size: 20px;
 }
 
 .login a {

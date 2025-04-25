@@ -273,3 +273,111 @@ header div a:hover {
     color: #616161;
 }
 
+@media(max-width: 768px) {
+    .container {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .login {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .upper, .lower {
+        margin: 0 5%;
+    }
+
+    .movie-info {
+        grid-template-columns: 1fr;
+    }
+
+    .movie-content h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .movie-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .movie-details-section h3,
+    .movie-details-section p {
+        text-align: center;
+    }
+
+    .watch-button {
+        margin: 30px 0 0 0;
+        width: 100%;
+    }
+
+    .recommended-movies h2 {
+        text-align: center;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(2, 2fr);
+        gap: 0px;
+        justify-items: center;
+    }
+
+ 
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer .columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer .columns div {
+        margin-left: 0;
+    }
+
+    .footer .footer_2 ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer_2 ul li {
+        margin-left: 0;
+        font-size: 14px;
+    }
+}
